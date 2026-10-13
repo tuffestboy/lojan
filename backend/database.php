@@ -1,14 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "";
-$dbname = "lojan";
-
-// Create connection
 $conn = new mysqli('localhost', 'lojan', 'password', 'lojan');
+$conn->set_charset('utf8mb4');
 
-// Check connection
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+    http_response_code(500);
+    die(json_encode(['error' => 'Database connection failed']));
 }
-?>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+
+
 /* Firefox */
 html {
     scrollbar-width: none;
@@ -6,4 +9,46 @@ html {
 /* Chrome, Edge, Safari */
 html::-webkit-scrollbar {
     display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav-pill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    background: #0c090a;
+    border-radius: 999px;
+    width: 90%;
+    max-width: 1000px;
+    border: #222222 solid 4px;
+}
+
+.nav-pill a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.nav-items ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items a {
+    font-family: 'clarity', sans-serif;
+}
+
+.nav-pill .titlename {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Isometra', serif;
 }
